@@ -1,1 +1,148 @@
-/* your code here */
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #000;
+    color: white;
+    padding: 50px 5%;
+}
+
+/* Footer Content */
+.content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Top section: Company Name & Social Icons */
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.logo_name {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Social Media Icons */
+.media-icons {
+    display: flex;
+}
+
+.media-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    background-color: gray;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.media-icons a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Footer Links & Sections */
+.link-boxes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.box {
+    flex: 1;
+    min-width: 150px;
+    margin-bottom: 20px;
+}
+
+.box h3 {
+    font-size: 18px;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.box ul {
+    list-style: none;
+}
+
+.box ul li {
+    margin: 8px 0;
+}
+
+.box ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.box ul li a:hover {
+    color: gray;
+}
+
+/* Contact Section */
+.box ul li {
+    color: white;
+}
+
+/* Footer Bottom */
+.bottom-details {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    border-top: 1px solid gray;
+    font-size: 14px;
+}
+
+.bottom-details a {
+    color: white;
+    text-decoration: none;
+}
+
+.bottom-details a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .media-icons {
+        margin-top: 15px;
+    }
+
+    .link-boxes {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bottom-details {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
